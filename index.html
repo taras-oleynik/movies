@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Find your film</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <h1>Find your film</h1>
+      </div>
+      <a href="watchlist.html" class="watchlist-link">My Watchlist</a>
+    </header>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Blade Runner" />
+      <button>Search</button>
+    </div>
+
+    <!-- RESULTS STATE -->
+    <div class="movies">
+      <div class="movie">
+        <img src="https://via.placeholder.com/100x150" alt="" />
+        <div class="movie-info">
+          <div class="title-row">
+            <h3>Blade Runner</h3>
+            <span class="rating">⭐ 8.1</span>
+          </div>
+
+          <div class="meta">
+            <span>117 min</span>
+            <span>Action, Drama, Sci-fi</span>
+            <button class="watchlist-btn">+ Watchlist</button>
+          </div>
+
+          <p>
+            A blade runner must pursue and terminate four replicants who stole a
+            ship in space...
+          </p>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="movie">
+        <img src="https://via.placeholder.com/100x150" alt="" />
+        <div class="movie-info">
+          <div class="title-row">
+            <h3>Blade Runner 2049</h3>
+            <span class="rating">⭐ 8.0</span>
+          </div>
+
+          <div class="meta">
+            <span>164 min</span>
+            <span>Action, Drama, Mystery</span>
+            <button class="watchlist-btn">+ Watchlist</button>
+          </div>
+
+          <p>
+            Young Blade Runner K's discovery of a long-buried secret leads him
+            to track down...
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- EMPTY RESULT STATE -->
+    <div class="empty hidden">
+      <p>Unable to find what you’re looking for. Please try another search.</p>
+    </div>
+  </body>
+</html>

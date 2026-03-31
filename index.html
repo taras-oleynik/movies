@@ -14,56 +14,32 @@
     </header>
 
     <div class="search-bar">
-      <input type="text" placeholder="Blade Runner" />
-      <button>Search</button>
+      <input id="searchInput" type="text" placeholder="Blade Runner" />
+      <button id="searchBtn">Search</button>
     </div>
 
     <!-- RESULTS STATE -->
-    <div class="movies">
+    <div class="movies" id="movies"></div>
+
+    <!-- Movie card template (cloned by JS) -->
+    <template id="movieTemplate">
       <div class="movie">
-        <img src="https://via.placeholder.com/100x150" alt="" />
+        <img src="" alt="" />
         <div class="movie-info">
           <div class="title-row">
-            <h3>Blade Runner</h3>
-            <span class="rating">⭐ 8.1</span>
+            <h3></h3>
+            <span class="rating"></span>
           </div>
-
           <div class="meta">
-            <span>117 min</span>
-            <span>Action, Drama, Sci-fi</span>
-            <button class="watchlist-btn">+ Watchlist</button>
+            <span class="runtime"></span>
+            <span class="genre"></span>
+            <button class="watchlist-btn" type="button">+ Watchlist</button>
           </div>
-
-          <p>
-            A blade runner must pursue and terminate four replicants who stole a
-            ship in space...
-          </p>
+          <p class="plot"></p>
         </div>
       </div>
-
       <hr />
-
-      <div class="movie">
-        <img src="https://via.placeholder.com/100x150" alt="" />
-        <div class="movie-info">
-          <div class="title-row">
-            <h3>Blade Runner 2049</h3>
-            <span class="rating">⭐ 8.0</span>
-          </div>
-
-          <div class="meta">
-            <span>164 min</span>
-            <span>Action, Drama, Mystery</span>
-            <button class="watchlist-btn">+ Watchlist</button>
-          </div>
-
-          <p>
-            Young Blade Runner K's discovery of a long-buried secret leads him
-            to track down...
-          </p>
-        </div>
-      </div>
-    </div>
+    </template>
 
     <!-- EMPTY RESULT STATE -->
     <div class="empty hidden">
